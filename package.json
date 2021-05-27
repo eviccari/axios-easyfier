@@ -1,0 +1,26 @@
+{
+  "name": "axios-easyfier",
+  "version": "1.0.0",
+  "description": "To help developers to create http requests easily with axios using a Object Builder Pattern",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\"",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "axios",
+    "http",
+    "object",
+    "builder"
+  ],
+  "author": "Eduardo Viccari",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "qs": "^6.10.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eviccari/axios-easyfier.git"
+  }
+}

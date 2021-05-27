@@ -2,10 +2,10 @@
   "name": "axios-easyfier",
   "version": "1.0.0",
   "description": "To help developers to create http requests easily with axios using a Object Builder Pattern",
-  "main": "index.js",
+  "main": "axios-easyfier.js",
   "scripts": {
     "test": "echo \"No test specified\"",
-    "start": "node index.js"
+    "start": "node test.js"
   },
   "keywords": [
     "axios",

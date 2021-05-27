@@ -13,7 +13,7 @@ To create a simple GET http request:
 
 ```javascript
 const AxiosEasyfier = require("./axios-easyfier"); // import AxiosEasyfier
-const easyfier = new AxiosEasyfier(); // create a AxiosEasyfier istance
+const easyfier = new AxiosEasyfier(); // create a AxiosEasyfier instance
 
 //... omitted code
 
@@ -71,7 +71,7 @@ makeRequest();
 <h2></h2>
 &nbsp;
 
-## Commom Methods
+## Common Methods
 
 AxiosEasyfier use Object Build Pattern to create a **request object** with commom attributes to send a http request using [axios](https://www.npmjs.com/package/axios) lib. It's support commom https verbs (**GET**, **POST**, **PUT**, **PATCH** and **DELETE**) and provide build functions to customize the request parameters.
 
@@ -97,7 +97,7 @@ const makeRequest = async () => {
 makeRequest();
 ```
 
-To send more than 1 header param, just call withHeaders again with new key -> value object:
+To send more than 1 header param, just call withHeaders with new key -> value object:
 
 ```javascript
 const response = await easyfier
@@ -116,7 +116,7 @@ const url = "https://jsonplaceholder.typicode.com/todos/1";
 const response = await easyfier.withUrl(url).withHeaders(headers).GET();
 ```
 
-To post data we need to call **.POST()** instead, with additional configuration to send a body in request:
+To send data we need to call **.POST()** instead, with additional configuration to send a body in request:
 
 ```javascript
 const headers = [{ "Content-type": "application/json" }, { Accept: "*/*" }];
@@ -159,7 +159,7 @@ const response = await easyfier
 // ...omitted code
 ```
 
-To configure timeout:
+Configuring timeout:
 
 ```javascript
 .withTimeoutInSecs(10) // add timeout param with 10 seconds
@@ -167,7 +167,7 @@ To configure timeout:
 .withTimeoutInMils(1000) // add timeout param with 1000 miliseconds
 ```
 
-To send request with **application/x-www-form-urlencoded** format
+Sending request with **application/x-www-form-urlencoded** format
 
 ```javascript
 .withUrlEncondedParams({"param" : "value"})
@@ -189,7 +189,7 @@ Under the hood, AxiosEasyfier use [qs](https://www.npmjs.com/package/qs) library
 
 ## Handle HTTP errors by yourself
 
-By default, axios raise an exception when request not returns success status code (>= **200** and <= **300**). In some cases, it's necessary provide a specific error message or redirect process flow, depending on http status.
+By default, axios raise an exception when request not returns success status code (out of range >= **200** and <= **300**). In some cases, it's necessary provide a specific error message or redirect process flow, depending on http status.
 To change that behavior, you can configure **withCustomErrorHandling()** with a specific satus code to delegates response handling to your function:
 
 ```javascript
@@ -239,7 +239,7 @@ const statusToVerify = [400, 404, 405];
 //... omitted code
 ```
 
-Or, use wihout parameters to handle all request status manually;
+Or, use without parameters to handle all request status manually;
 
 ```javascript
 //... omitted code
@@ -278,3 +278,4 @@ https://github.com/eviccari/axios-easyfier
 
 - Form request
 - Another complex configurations
+- Fetching data

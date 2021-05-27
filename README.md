@@ -12,7 +12,7 @@ To help developers to create http requests easily with axios using a Object Buil
 To create a simple GET http request:
 
 ```javascript
-const AxiosEasyfier = require("./axios-easyfier"); // import AxiosEasyfier
+const AxiosEasyfier = require("axios-easyfier"); // import AxiosEasyfier
 const easyfier = new AxiosEasyfier(); // create a AxiosEasyfier instance
 
 //... omitted code
@@ -33,7 +33,7 @@ The response body looks like the follow:
 And the complete example of GET request:
 
 ```javascript
-const AxiosEasyfier = require("./axios-easyfier");
+const AxiosEasyfier = require("axios-easyfier");
 const easyfier = new AxiosEasyfier();
 
 const makeRequest = async () => {
@@ -54,7 +54,7 @@ makeRequest();
 In the **Promise** way:
 
 ```javascript
-const AxiosEasyfier = require("./axios-easyfier");
+const AxiosEasyfier = require("axios-easyfier");
 const easyfier = new AxiosEasyfier();
 
 const makeRequest = () => {
@@ -78,7 +78,7 @@ AxiosEasyfier use Object Build Pattern to create a **request object** with commo
 For example, to make a GET request with custom headers:
 
 ```javascript
-const AxiosEasyfier = require("./axios-easyfier");
+const AxiosEasyfier = require("axios-easyfier");
 const easyfier = new AxiosEasyfier();
 
 const makeRequest = async () => {

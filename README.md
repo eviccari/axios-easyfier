@@ -73,7 +73,7 @@ makeRequest();
 
 ## Common Methods
 
-AxiosEasyfier use Object Build Pattern to create a **request object** with commom attributes to send a http request using [axios](https://www.npmjs.com/package/axios) lib. It's support commom https verbs (**GET**, **POST**, **PUT**, **PATCH** and **DELETE**) and provide build functions to customize the request parameters.
+AxiosEasyfier use Object Build Pattern to create a **request object** with common attributes to send a http request using [axios](https://www.npmjs.com/package/axios) lib. It's support common https verbs (**GET**, **POST**, **PUT**, **PATCH** and **DELETE**) and provide build functions to customize the request parameters.
 
 For example, to make a GET request with custom headers:
 
@@ -216,7 +216,7 @@ const makeRequest = async () => {
 };
 ```
 
-**IMPORTANT:** When withCustomErrorHandling method has configurated, easyfier returns a complete axios reponse object:
+**IMPORTANT:** When withCustomErrorHandling method has configured, easyfier returns a complete axios reponse object:
 
 ```json
 {

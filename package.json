@@ -1,6 +1,6 @@
 {
   "name": "axios-easyfier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "To help developers to create http requests easily with axios using a Object Builder Pattern",
   "main": "axios-easyfier.js",
   "scripts": {
